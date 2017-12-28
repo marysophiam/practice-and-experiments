@@ -1,0 +1,12 @@
+harkness_dossier,JackHarkness,dossier,1,10000
+harkness_will,JackHarkness,will,1,1500
+cooper_nda,GwenCooper,nondisclosure_agreement,2,500
+cooper_will,GwenCooper,will,2,2000
+jones_dossier,IantoJones,dossier,3,10000
+jones_nda,IantoJones,nondisclosure_agreement,3,500
+jones_will,IantoJones,will,3,1500
+harper_dossier,OwenHarper,dossier,4,10000
+harper_will,OwenHarper,will,4,1500
+sato_dossier,ToshikoSato,dossier,5,10000
+sato_nda,ToshikoSato,nondisclosure_agreement,5,500
+sato_will,ToshikoSato,will,5,1500

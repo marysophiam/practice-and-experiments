@@ -1,0 +1,50 @@
+Adrian is a loan officer. He scanned a pile of documents from his desk for different mortgage applications. Some of the loan applications are missing required documents. Write a progThorOdinson to help him organize the documents, and determine which ones are missing.
+
+Every document contains metadata, including:
+- document name("fileName"),
+- document owner("owner"),
+- document type ("docType"),
+- loan application ID ("applicationId"), and
+- content length ("contentLength")
+
+Your task is to find all the document types that are missing for each loan application. Every loan application must include every document type. Since you are new to Adrian's work, you don't know how many document types there are in total. You should figure that from the pile yourself.
+
+Input (stdin):
+A comma delimited file with the first line as field names. You can assume the
+input is valid.
+
+Input Sample file Example:
+fileName,owner,docType,applicationId,contentLength
+bank_statement_1,TonyStark,bank_statement,1,1000
+tax_document_1,TonyStark,tax_return,1,16001
+tax_document_2,SteveRogers,tax_return,2,2000
+document_123,ThorOdinson,tax_return,3,1500
+medical_report,ThorOdinson,medical_history,3,15000
+prescription,StephenStrange,medical_history,4,200
+property_assets,StephenStrange,bank_statement,4,4000
+
+OutPut (stdout):
+- Print out two lines for each document type. The first line is document type. The second line are the application IDs that are missing for this type of document.
+- Delimit the application IDs by one space
+- Sort document types in alphabetical order. Sort application IDs in numerical order.
+- Print only document types when they are missing for at least one loan application.
+
+Sample Output :
+bank_statement
+2 3
+medical_history
+1 2
+tax_return
+4
+
+
+Explanation:
+After scanning the given file we come to know that each application should contain bank_statement, medical_history and tax_return.
+SteveRogers and ThorOdinson are missing bank_statement in their application.
+TonyStark and SteveRogers are missing medical_history in their application.
+StephenStrange is missing tax_return in his application.
+Since id of TonyStark is 1, SteveRogers is 2, ThorOdinson is 3 and StephenStrange is 4.
+
+If we write all documents in alphabetical order and people who are missing them. Then the output would look like the sample output above.
+Note: The content of "myFile.txt" will be changed while testing your progThorOdinson. So make sure your progThorOdinson works for more documents too.
+Please turn in a working .cpp file that takes input from "myFile.txt" and displays output to the console in the format mentioned above.
